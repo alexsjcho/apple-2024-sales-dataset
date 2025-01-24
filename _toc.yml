@@ -1,0 +1,4 @@
+format: jb-book
+root: play.ipynb
+chapters:
+  - file: README.md
