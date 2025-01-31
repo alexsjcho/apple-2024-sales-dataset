@@ -1,8 +1,9 @@
+
 # Kaggle Apple 2024 Sales Dataset
 
 - [Apple 2024 Sales Dataset](https://www.kaggle.com/datasets/chozenwon/apple-2024-sales-dataset)
 
-#Import Libaries and Load Dataset
+# Import Libaries and Load Dataset
 
 ```python
 # Import required libraries first
@@ -31,30 +32,10 @@ csv_path = os.path.join(path, "apple_sales_2024.csv")
 df = pd.read_csv(csv_path)
 print(df.head())
 ```
-
-   State         Region  iPhone Sales (in million units)  \
-0  Chongqing  Greater China                             7.46   
-1    Germany         Europe                             8.63   
-2         UK         Europe                             5.61   
-3   Shanghai  Greater China                             7.82   
-4   Thailand   Rest of Asia                            16.70   
-
-   iPad Sales (in million units)  Mac Sales (in million units)  \
-0                           6.75                          1.19   
-1                          14.06                          7.03   
-2                          14.09                          8.78   
-3                           7.97                          9.78   
-4                           8.13                          6.46   
-
-   Wearables (in million units)  Services Revenue (in billion $)  
-0                          5.88                            15.88  
-1                          7.42                            10.12  
-2                          8.19                            19.85  
-3                          2.28                             6.16  
-4                          3.48                            13.29  
+![Dataset Overview](images/dataset_overview.png)
 
 
-#Data Cleaning and Preprocessing
+# Data Cleaning and Preprocessing
 
 ```python
 # Check for missing values
@@ -72,7 +53,7 @@ dtype: int64
 
 Dataset returns clean with no missing values
 
-#Exploratory Data Analysis
+# Exploratory Data Analysis
 
 We will explore the dataset using a couple visualizations options to uncover insights and patterns in data
 
@@ -90,12 +71,12 @@ A correlation heatmap visualizes the relationships between numerical variables i
 - 0 Light Gray: No correlation
 
 ### 2. Pair Plot Analysis
-![Pair Plot](images/pair_plot.png)
+![Pair Plot](images/pairplot.png)
 
 ### 3. Regional iPhone Sales
 ![iPhone Sales by Region](images/iphone_sales_region.png)
 
-#Predictive Modeling
+# Predictive Modeling
 
 We can try to predict one of the sales figures compared to the other. We will use a linear regression model to predict iPhone Sales 
 
