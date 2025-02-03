@@ -83,7 +83,7 @@ Feature information:
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 1000 entries, 0 to 999
 Data columns (total 7 columns):
- #   Column                           Non-Null Count  Dtype  
+     Column                           Non-Null Count  Dtype  
 ---  ------                           --------------  -----  
  0   State                            1000 non-null   object 
  1   Region                           1000 non-null   object 
@@ -198,7 +198,7 @@ The score incdicates that the model is performing poorly and it would be better 
 
 ## Conclusion
 
-There might not be a strong linear relationship between iPhone sales and other products. 
+There might not be a strong linear correlation between each of the features in dataset (strong correlation defined as greater or equal to 0.7). But just from gleaning the data, we can see that Services Revenue has a strong correlation with iPhone and Wearable unit sales since these 2 products make up the bulk of the Services Revenue. 
 
 ## Future Work and Improvements
 
